@@ -1,0 +1,44 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-link{
+  color: black !important;
+  font-weight: 500;
+  font-size: 1.2em;
+  padding-left: 20px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.nav-link:hover{
+  color: #de7d2e !important;
+}
+.avdonscreen{
+  color: #de7d2e !important;
+  /* text-decoration: underline !important;
+  text-decoration-color: #de7d2e;
+  text-decoration-thickness: 1.5px; */
+  font-weight: bold;
+}
+.container{
+  width: 100%;
+  /* max-width: 1500px; */
+  /* background-color: rgba(255, 255, 255, 0); */
+  background-color: transparent;
+}
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.avdheading{
+  text-align: center;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
