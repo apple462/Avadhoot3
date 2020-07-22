@@ -1,8 +1,28 @@
 body{
   margin: 0px;
   padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+}
+/* navigator */
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 1px 6px 0px gainsboro;
+
+    /* the rest of your styling */
 }
 
+/* navigator animation */
+#header, #logo{
+    -webkit-transition: all 0.3s ease;
+ 	transition: all 0.3s ease;
+}
+/* navigator animation ends */
+
+.bg-light{
+    background-color: white !important;
+}
 .nav-link{
   color: black !important;
   font-weight: 500;
@@ -23,12 +43,13 @@ body{
 }
 .container{
   width: 100%;
-  /* max-width: 1500px; */
-  /* background-color: rgba(255, 255, 255, 0); */
-  background-color: transparent;
+
 }
+/* navigator ends */
+
+/* carousel */
 .carousel-item {
-  height: 100vh;
+  height: 80vh;
   min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -36,12 +57,203 @@ body{
   -o-background-size: cover;
   background-size: cover;
 }
-
-.avdheading{
-  text-align: center;
-  margin: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+/* Carousel ends */
+@media (min-width:992px){
+    .avdheadingLora {
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        /* font-family: 'Times New Roman', Times, serif; */
+        font-family: 'Lora', serif;
+        font-size: 7vh;
+        letter-spacing: 2px;
+    }
 }
+@media (max-width:992px){
+    .avdheadingLora {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        /* font-family: 'Times New Roman', Times, serif; */
+        font-family: 'Lora', serif;
+        font-size: 5vh;
+        letter-spacing: 2px;
+    }
+}
+
+.avdWhyPackaging{
+font-size: 2.8vh;
+}
+
+.icons {
+    font-weight: bold;
+    color: #de7d2e;
+    font-size: 50px;
+}
+
+/* Sustainabilty */
+.avdSustain{
+    /* margin: 30px; */
+    /* margin-right: 50px; */
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+hr.solid {
+    border-top: 0.5px solid #bbb;
+    width: 70%;
+    /* margin-left: 50px; */
+  }
+/* sustainability ends */
+
+/* products */
+.AVD-product-card{
+    padding:10px;
+    /* height: 50%; */
+  }
+  .AVD-products-CTA{
+    background: orange;
+    color:white;
+    margin-bottom: 0px;
+    width:100%;
+    height: auto;
+    border:none;
+  }
+  .AVD-products-CTA:hover{
+    background: orange;
+    color:white;
+  }
+  
+  .card{
+    padding-bottom: 0px;
+    height: auto;
+  }
+  .card-title{
+    color:orange;
+    height: 70px;
+    text-shadow: 1px 1px black;
+    margin-top: 10px;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .card-text{
+    height: 80px;
+  }
+  .AVD-products-CTA span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .AVD-products-CTA span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .AVD-products-CTA:hover span {
+    padding-right: 25px;
+  }
+  
+  .AVD-products-CTA:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.hoverright {
+    /*height: 110%;*/
+    overflow: hidden;
+    position: relative;
+    padding: 150px;
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 150px;
+    width: 150px;
+  }
+  .hoverleft {
+    /*height: 110%;*/
+    overflow: hidden;
+    position: relative;
+    padding: 150px;
+    float: left;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    height: 150px;
+    width: 150px;
+  }
+  
+  .hover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+  }
+  
+  .hover img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+  }
+  
+  .hover-content {
+    position: relative;
+    z-index: 99;
+  }
+  
+  .hover-1 img {
+    width: 105%;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    transition: all 0.3s;
+    float:right;
+  }
+  
+  .hover-1-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    transition: all 0.4s;
+  }
+  
+  .hover-1 .hover-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hover-1-description {
+    transform: translateY(0.5rem);
+    transition: all 0.4s;
+    opacity: 0;
+  }
+  
+  .hover-1:hover .hover-1-content {
+    bottom: 2rem;
+  }
+  
+  .hover-1:hover .hover-1-description {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .hover-1:hover img {
+    left: 0;
+  }
+  
+  .hover-1:hover .hover-overlay {
+    opacity: 0.8;
+  }
+  /* products ends */
 
 /*CSS FOR OUR CLIENTS*/
 .slick-slide {
@@ -160,3 +372,58 @@ body{
     display: none;
 }
 /*ENDS*/
+
+/*Footer*/
+.AVD-footer-center{
+    border-radius: 10px;
+    background: #de7d2e;
+    height: auto;
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+  }
+  .AVD-footer-center-back{
+    background: black;
+    width:100%;
+    height: 150px;
+    margin-top:-40px;
+    padding-top: 75px;
+    color:white;
+    z-index: -1;
+  }
+  .AVD-footer-label{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 1.25em;
+  }
+  .AVD-footer-label a,.AVD-footer-label a:active{
+  text-decoration: none;
+  color:white;
+  }
+  .AVD-footer-label a:hover{
+    /*background: black;*/
+    /*text-decoration: underline;*/
+  }
+  .AVD-footer-icon{
+    display: inline-flex;
+    vertical-align: middle;
+  }
+  .AVD-footer-icon-linkedin{
+   }
+  .AVD-footer-icon-top{
+    display: none; 
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    width:40px;
+    height: 40px;
+    background:#de7d2e;
+    float: right;
+    border-radius: 40px;
+  }
+  .AVD-footer-copyright{
+    font-size: 0.8em;
+  }
+  /* Footer ends */
