@@ -401,6 +401,9 @@ hr.solid {
   }
   .AVD-footer-icon-linkedin{
    }
+   html{
+  scroll-behavior: smooth;
+}
   .AVD-footer-icon-top{
     display: none; 
     position: fixed;
