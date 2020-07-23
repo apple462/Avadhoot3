@@ -16,7 +16,7 @@ body{
 /* navigator animation */
 #header, #logo{
     -webkit-transition: all 0.3s ease;
- 	transition: all 0.3s ease;
+ 	  transition: all 0.3s ease;
 }
 /* navigator animation ends */
 
@@ -26,7 +26,7 @@ body{
 .nav-link{
   color: black !important;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1.2em !important;
   padding-left: 20px !important;
   padding-top: 0px !important;
   padding-bottom: 0px !important;
@@ -84,11 +84,26 @@ body{
 .avdWhyPackaging{
 font-size: 2.8vh;
 }
+.avdWhyPackagingImage{
+  vertical-align: center;
+  align-items: baseline;
+  text-align: center;
+  animation-name:
+}
+.avdWhyPackagingImage:hover{
+  animation: pulse;
+  animation-duration: 0.3s;
+}
 
 .icons {
     font-weight: bold;
     color: #de7d2e;
     font-size: 50px;
+    text-shadow: 0 2px 2px black;
+}
+.icons:hover{
+  animation: headShake;
+  animation-duration: 1.5s;
 }
 
 /* Sustainabilty */
@@ -104,6 +119,8 @@ hr.solid {
     /* margin-left: 50px; */
   }
 /* sustainability ends */
+
+/* products */
 
 /* products */
 .AVD-product-card{
@@ -122,7 +139,7 @@ hr.solid {
     background: orange;
     color:white;
   }
-  
+
   .card{
     padding-bottom: 0px;
     height: auto;
@@ -145,7 +162,7 @@ hr.solid {
     position: relative;
     transition: 0.5s;
   }
-  
+
   .AVD-products-CTA span:after {
     content: '\00bb';
     position: absolute;
@@ -154,11 +171,11 @@ hr.solid {
     right: -20px;
     transition: 0.5s;
   }
-  
+
   .AVD-products-CTA:hover span {
     padding-right: 25px;
   }
-  
+
   .AVD-products-CTA:hover span:after {
     opacity: 1;
     right: 0;
@@ -168,14 +185,14 @@ hr.solid {
     /*height: 110%;*/
     overflow: hidden;
     position: relative;
-    padding: 150px;
+    padding: 160px;
     /* float: right; */
-    margin-left: 25px;
+    margin-left: 20px;
     margin-right: 20px;
     height: 150px;
     width: 150px;
   }
-  
+
   .hover-overlay {
     width: 100%;
     height: 100%;
@@ -185,7 +202,7 @@ hr.solid {
     z-index: 90;
     transition: all 0.4s;
   }
-  
+
   .hover img {
     width: 100%;
     position: absolute;
@@ -193,12 +210,12 @@ hr.solid {
     left: 0;
     transition: all 0.3s;
   }
-  
+
   .hover-content {
     position: relative;
     z-index: 99;
   }
-  
+
   .hover-1 img {
     width: 105%;
     position: absolute;
@@ -207,7 +224,7 @@ hr.solid {
     transition: all 0.3s;
     float:right;
   }
-  
+
   .hover-1-content {
     position: absolute;
     bottom: 0;
@@ -215,32 +232,37 @@ hr.solid {
     z-index: 99;
     transition: all 0.4s;
   }
-  
+
   .hover-1 .hover-overlay {
     background: rgba(0, 0, 0, 0.5);
   }
-  
+
   .hover-1-description {
     transform: translateY(0.5rem);
     transition: all 0.4s;
     opacity: 0;
   }
-  
+
   .hover-1:hover .hover-1-content {
     bottom: 2rem;
   }
-  
+
   .hover-1:hover .hover-1-description {
     opacity: 1;
     transform: none;
   }
-  
+
   .hover-1:hover img {
     left: 0;
   }
-  
+
   .hover-1:hover .hover-overlay {
     opacity: 0.8;
+  }
+
+  .avdfirstletter{
+    font-weight: bold;
+    font-size: 1.5em;
   }
   /* products ends */
 
@@ -372,7 +394,7 @@ hr.solid {
     padding: 10px;
   }
   .AVD-footer-center-back{
-    background: black;
+    background: #2C3A47;
     width:100%;
     height: 150px;
     margin-top:-40px;
@@ -405,10 +427,10 @@ hr.solid {
   scroll-behavior: smooth;
 }
   .AVD-footer-icon-top{
-    display: none; 
+    display: none;
     position: fixed;
-    bottom: 20px; 
-    right: 30px; 
+    bottom: 20px;
+    right: 30px;
     width:40px;
     height: 40px;
     background:#de7d2e;
@@ -421,7 +443,7 @@ hr.solid {
   /* Footer ends */
 
   /* Linkedin Icon */
-  
+
 .icon {
 	position:relative;
 	text-align:center;
@@ -431,10 +453,10 @@ hr.solid {
 	border-top-right-radius: 	20px;
 	border-top-left-radius: 	20px;
 	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 	20px; 
+	border-bottom-left-radius: 	20px;
 	-moz-border-radius: 		20px 20px 20px 20px;
 	-webkit-border-radius: 		20px 20px 20px 20px;
-	-khtml-border-radius: 		20px 20px 20px 20px; 	
+	-khtml-border-radius: 		20px 20px 20px 20px;
 	color:#FFFFFF;
 }
 .icon i {
@@ -452,7 +474,7 @@ hr.solid {
 	transition: 0.5s;
 	-moz-transition: 0.5s;
 	-webkit-transition: 0.5s;
-	-o-transition: 0.5s; 	
+	-o-transition: 0.5s;
 }
 .icon.social:hover {
 	background:#262626 ;
@@ -465,7 +487,7 @@ hr.solid {
 	-moz-filter: 	drop-shadow(0 1px 10px rgba(0,0,0,.8));
 	-ms-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
 	-o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
-	filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	
+	filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));
 }
 .icon.social.in i {
 	left:11px;
