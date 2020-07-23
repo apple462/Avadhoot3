@@ -13,7 +13,11 @@
     <script src="js\jquery-3.1.1.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<script>
+  AOS.init();
+</script>
 <style type="text/css">
 html{
     scroll-behavior: smooth;
@@ -252,7 +256,7 @@ color:white;
 }
 </style>
 <!-- products -->
-<h1 align="center">Style 2</h1>
+<h1 align="center" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="600">Style 2</h1>
 
 <div class='container'>
 <div class = 'row'>
@@ -376,4 +380,9 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 </html>
