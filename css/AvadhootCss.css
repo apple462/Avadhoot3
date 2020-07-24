@@ -806,14 +806,3 @@ margin-left:-12px;
   }
   /* team ends */
 
-  /* team carousel */
-  .teamCarousel-item {
-    height: 40vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  /* end team carousel */
