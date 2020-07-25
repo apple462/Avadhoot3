@@ -64,8 +64,9 @@ body{
         padding-top: 40px;
         padding-bottom: 40px;
         /* font-family: 'Times New Roman', Times, serif; */
-        font-family: 'Lora', serif;
-        font-size: 7vh;
+        /* font-family: 'Lora', serif; */
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 3em;
         letter-spacing: 2px;
     }
 }
@@ -75,8 +76,9 @@ body{
         padding-top: 30px;
         padding-bottom: 40px;
         /* font-family: 'Times New Roman', Times, serif; */
-        font-family: 'Lora', serif;
-        font-size: 5vh;
+        /* font-family: 'Lora', serif; */
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 3em;
         letter-spacing: 2px;
     }
 }
@@ -338,6 +340,7 @@ margin-left:-12px;
     transform: translateY(0.5rem);
     transition: all 0.4s;
     opacity: 0;
+    color: white !important;
   }
 
   .hover-1:hover .hover-1-content {
@@ -806,3 +809,54 @@ margin-left:-12px;
   }
   /* team ends */
 
+
+p {
+  /* margin-top: 1em !important; */
+  margin-bottom: 1em !important ;
+} 
+
+/* Industries gallery */
+.avdSubHead{
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #888888;
+}
+
+.avdIndustries{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* text-align: center !important; */
+}
+.avdIndustries div:hover{
+  box-shadow: 0 0 10px #888888;
+}
+/* Industries Gallery ends */
+
+/* 4points icon */
+.avd4pointsIcon1{
+  font-size:80px !important;
+  color: rgb(204, 153, 0);
+  margin: 0 0 20px 0;
+}
+.avd4pointsIcon2{
+  font-size:80px !important;
+  color: rgb(232, 76, 34);
+  margin: 0 0 20px 0;
+}
+.avd4pointsIcon3{
+  font-size:80px !important;
+  color:rgb(182, 73, 38);
+  margin: 0 0 20px 0;
+}
+.avd4pointsIcon4{
+  font-size:80px !important;
+  color: rgb(27, 45, 64);
+  margin: 0 0 20px 0;
+}
+.avdIcontext{
+  font-size: 1em;
+  color: #999;
+}
+/* 4points icon end */
