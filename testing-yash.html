@@ -1,506 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <title>Avadhoot</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="images/avd-a-orange-128x128.png" type="image/x-icon">
     <link rel="stylesheet" href="css\bootstrap.min.css">
-    <script src="js\bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-    <script src="js\bootstrap.js"></script>
-    <script src="js\bootstrap.bundle.min.js"></script>
-    <script src="js\jquery-3.1.1.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
-<!-- PROJECT GALLERY FILES -->
-<link rel='stylesheet' id='bootstrap-css'  href='http://www.d.commonsupport.com/greengia/wp-content/themes/realgarden/css/bootstrap.min.css?ver=5.0.10' type='text/css' media='all' />
-
- <link rel='stylesheet' id='common-style-css'  href='http://www.d.commonsupport.com/greengia/wp-content/themes/realgarden/css/common-style.css?ver=5.0.10' type='text/css' media='all' />
-<link rel='stylesheet' id='arctica_main-style-css'  href='http://www.d.commonsupport.com/greengia/wp-content/themes/realgarden/style.css?ver=5.0.10' type='text/css' media='all' />
-<!-- ENDS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+<style type="text/css">
+  html {
+  scroll-behavior: smooth;
+}
+  .mainBox{
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    height:100%;
+    /*border: 3px solid blue;*/
+  background-color: orange;
+    border-radius: 10px;
+      overflow: scroll;
+  }
+  .yearBox{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: black;
+  /*position: absolute;*/
+  height: 100px;
+  width: 100px;
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  color:white;
+margin-left: auto;
+margin-right: 0px;}
+.BOXtitle{
+
+  font-size: 2em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  color:white;
+}
+.BOXcontent{
+  font-size: 1.2em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  color:white;
+}
+</style>
+<div class="container-flex">
+<div class="mainBOX" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="600" style="background: black" onscroll="scrollTo2()">
+  <div class="yearBOX" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="1000" >1993</div>
+  <div class="BOXtitle">MAIN TITLE IN ONE LINE</div>
+  <div class="BOXcontent">Hello World</div>
+</div>
+<div class="mainBOX" id='slide2' data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600" data-aos-offset="300" >
+  <div class="yearBOX" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-offset="300">1994</div>
+  <div class="BOXtitle">MAIN TITLE IN ONE LINE</div>
+  <div class="BOXcontent">Hello World</div>
+</div>
+
+</div>
+
+<!-- <script>
+function scrollTo2() {
+  var elmnt = document.getElementById("slide2");
+  elmnt.scrollIntoView();
+  alert('h');
+}
+</script> -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
-<style type="text/css">
-html{
-    scroll-behavior: smooth;
-}
-.AVD-footer-center{
-  border-radius: 10px;
-  background: orange;
-  height: auto;
-  width: 100%;
-  min-height: 80px;
-  padding: 10px;
-}
-.AVD-footer-center-back{
-  background: black;
-  width:100%;
-  height: 150px;
-  margin-top:-40px;
-  padding-top: 75px;
-  color:white;
-  z-index: -1;
-}
-.AVD-footer-label{
-  text-align: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  font-size: 1.25em;
-}
-.AVD-footer-label a,.AVD-footer-label a:active{
-text-decoration: none;
-color:white;
-}
-.AVD-footer-label a:hover{
-  /*background: black;*/
-  /*text-decoration: underline;*/
-}
-.AVD-footer-icon{
-  display: inline-flex;
-  vertical-align: middle;
-}
-.AVD-footer-icon-linkedin{
- }
-.AVD-footer-icon-top{
-  display: none; 
-  position: fixed;
-  bottom: 20px; 
-  right: 30px; 
-  width:40px;
-  height: 40px;
-  background:orange;
-  float: right;
-  border-radius: 40px;
-}
-.AVD-footer-copyright{
-  font-size: 0.8em;
-}
-.AVD-product-card{
-  padding:10px;
-}
-.AVD-products-CTA{
-  background: orange;
-  color:white;
-  margin-bottom: 0px;
-  width:100%;
-  height: auto;
-  border:none;
-}
-.AVD-products-CTA:hover{
-  background: orange;
-  color:white;
-}
 
-.card{
-  padding-bottom: 0px;
-  height: auto;
-}
-.card-title{
-  color:orange;
-  height: 70px;
-  text-shadow: 1px 1px black;
-  margin-top: 10px;
-  font-size: 1.5em;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-.card-text{
-  height: 80px;
-}
-.AVD-products-CTA span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.AVD-products-CTA span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.AVD-products-CTA:hover span {
-  padding-right: 25px;
-}
-
-.AVD-products-CTA:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-</style>
-
-
-<!-- card -->
-
-<!-- END -->
-
-
-<!-- products -->
-
-<h1 align="center">Style 1</h1>
-<div class='container'>
-<div class = 'row'>
-
-<div class="card AVD-product-card col-lg-3 col-md-6 col-sm-12">
-  <img src="Images/p1.jpeg" class="card-img-top" alt="https://pbs.twimg.com/profile_images/1203877234798399490/Uu9e2tBd_400x400.jpg">
-  <!-- <div class="card-body"> -->
-    <h5 class="card-title text-center">Attachments & Accessories</h5>
-    <p class="card-text text-center">Find all types of attachments & accessories along with boxes – plates, partitions, trays, caps, and sleeves </p>
-    <button type="button" class="btn btn-primary btn-lg btn-block AVD-products-CTA"><span>Call to Action</span></a></button>
-  <!-- </div> -->
-</div>
-
-<div class="card AVD-product-card col-lg-3 col-md-6 col-sm-12">
-  <img src="Images/p2r.png" class="card-img-top" alt="https://pbs.twimg.com/profile_images/1203877234798399490/Uu9e2tBd_400x400.jpg">
-  <!-- <div class="card-body"> -->
-    <h5 class="card-title text-center">Boards & Corrugated Rolls</h5>
-    <p class="card-text text-center">We supply 3-ply and 5-ply boards as well as jumbo rolls in all BFs and GSM range of 120 to 400 </p>
-    <button type="button" class="btn btn-primary btn-lg btn-block AVD-products-CTA"><span>Call to Action</span></a></button>
-  <!-- </div> -->
-</div>
-
-<div class="card AVD-product-card col-lg-3 col-md-6 col-sm-12">
-  <img src="Images/p3r.jpg" class="card-img-top" alt="https://pbs.twimg.com/profile_images/1203877234798399490/Uu9e2tBd_400x400.jpg">
-  <!-- <div class="card-body"> -->
-    <h5 class="card-title text-center">Containers & Half RSCs</h5>
-    <p class="card-text text-center">We supply 3-ply & 5-ply printed, high compression strength boxes, half RSCs and wrap around cartons </p>
-    <button type="button" class="btn btn-primary btn-lg btn-block AVD-products-CTA"><span>Call to Action</span></a></button>
-  <!-- </div> -->
-</div>
-
-<div class="card AVD-product-card col-lg-3 col-md-6 col-sm-12">
-  <img src="Images/p4r.jpg" class="card-img-top" alt="https://pbs.twimg.com/profile_images/1203877234798399490/Uu9e2tBd_400x400.jpg">
-  <!-- <div class="card-body"> -->
-    <h5 class="card-title text-center">Design & Development</h5>
-    <p class="card-text text-center">Our R&D Teams actively assist our clients in developing new packaging solutions for their products</p>
-    <button type="button" class="btn btn-primary btn-lg btn-block AVD-products-CTA"><span>Call to Action</span></a></button>
-  <!-- </div> -->
-</div>
-
-
-</div>
-</div>
-<!-- end -->
-
-
-
-<!-- products2 -->
-<style type="text/css">
-  .hover {
-  /*height: 110%;*/
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 80%;
-}
-
-.hover-overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 90;
-  transition: all 0.4s;
-}
-
-.hover img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.3s;
-}
-
-.hover-content {
-  position: relative;
-  z-index: 99;
-}
-
-.hover-1 img {
-  width: 105%;
-  position: absolute;
-  top: 0;
-  left: -5%;
-  transition: all 0.3s;
-}
-
-.hover-1-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 99;
-  transition: all 0.4s;
-}
-
-.hover-1 .hover-overlay {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.hover-1-description {
-  transform: translateY(0.5rem);
-  transition: all 0.4s;
-  opacity: 0;
-}
-
-.hover-1:hover .hover-1-content {
-  bottom: 2rem;
-}
-
-.hover-1:hover .hover-1-description {
-  opacity: 1;
-  transform: none;
-}
-
-.hover-1:hover img {
-  left: 0;
-}
-
-.hover-1:hover .hover-overlay {
-  opacity: 0.8;
-}
-</style>
-<!-- products -->
-<h1 align="center" data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="600">Style 2</h1>
-
-<div class='container'>
-<div class = 'row'>
-
-<div class="AVD-product-card col-lg-6 col-md-6 col-sm-12 col-xs-4">
-        <div class="hover hover-1 text-white rounded"><img src="Images/p1.jpeg" alt="">
-          <div class="hover-overlay"></div>
-          <div class="hover-1-content px-5 py-4">
-            <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Avadhoot's </span>Attachments & Accessories</h3>
-            <p class="hover-1-description font-weight-light mb-0">Find all types of attachments & accessories along with boxes – plates, partitions, trays, caps, and sleeves</p>
-          </div>
-      </div>
-    <button type="button" class="btn btn-primary btn-lg btn-block AVD-products-CTA"><span>Call to Action</span></a></button>
-  <!-- </div> -->
-</div>
-
-<div class="AVD-product-card col-lg-6 col-md-6 col-sm-12 col-xs-4">
-        <div class="hover hover-1 text-white rounded"><img src="Images/p2r.png" alt="">
-          <div class="hover-overlay"></div>
-          <div class="hover-1-content px-5 py-4">
-            <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Avadhoot's </span>Boards & Corrugated Rolls</h3>
-            <p class="hover-1-description font-weight-light mb-0">We supply 3-ply and 5-ply boards as well as jumbo rolls in all BFs and GSM range of 120 to 400 </p>
-          </div>
-      </div>
-    <button type="button" class="btn btn-primary btn-lg btn-block AVD-products-CTA"><span>Call to Action</span></a></button>
-  <!-- </div> -->
-</div>
-
-<div class="AVD-product-card col-lg-6 col-md-6 col-sm-12 col-xs-4">
-        <div class="hover hover-1 text-white rounded"><img src="Images/p3r.jpg" alt="">
-          <div class="hover-overlay"></div>
-          <div class="hover-1-content px-5 py-4">
-            <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Avadhoot's </span>Containers & Half RSCs
-</h3>
-            <p class="hover-1-description font-weight-light mb-0">We supply 3-ply & 5-ply printed, high compression strength boxes, half RSCs and wrap around cartons</p>
-          </div>
-      </div>
-    <button type="button" class="btn btn-primary btn-lg btn-block AVD-products-CTA"><span>Call to Action</span></a></button>
-  <!-- </div> -->
-</div>
-
-<div class="AVD-product-card col-lg-6 col-md-6 col-sm-12 col-xs-4">
-        <div class="hover hover-1 text-white rounded"><img src="Images/p4r.jpg" alt="">
-          <div class="hover-overlay"></div>
-          <div class="hover-1-content px-5 py-4">
-            <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Avadhoot's </span>Design & Development
-</h3>
-            <p class="hover-1-description font-weight-light mb-0">Our R&D Teams actively assist our clients in developing new packaging solutions for their products </p>
-          </div>
-      </div>
-    <button type="button" class="btn btn-primary btn-lg btn-block AVD-products-CTA"><span>Call to Action</span></a></button>
-  <!-- </div> -->
-</div>
-
-
-</div>
-</div>
-<!-- end -->
-
-
-<section class="kc-elm kc-css-463466 kc_row"><div class="kc-row-container"><div class="kc-wrap-columns">
-<div class="kc-elm kc-css-276122 kc_col-sm-12 kc_column kc_col-sm-12"><div class="kc-col-container">
-<section class="gallery sec-padd2 light">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-12">
-                <div class="section-title">
-                    <h1>Project <span>Gallery</span></h1>
-                </div>
-            </div>
-            <div class="col-md-9 col-sm-12">
-                <div class="center margin-top-10">
-                    <ul class="post-filter style-2 list-inline">
-                      <li class="active" data-filter=".filter-item"><span>View All</span></li>
-                                    <li data-filter=".garden-care"><span>Garden Care</span></li>
-                                                <li data-filter=".snow-removal"><span>Snow Removal</span></li>
-                                                <li data-filter=".videos"><span>Videos</span></li>
-                                                <li data-filter=".lawn-care"><span>Lawn Care</span></li>
-                                                <li data-filter=".planting"><span>Planting</span></li>
-                                            </ul>
-                </div> 
-            </div>
-        </div>
-        
-        <div class="row filter-layout">
-                <article class="col-md-3 col-sm-6 col-xs-12 filter-item garden-care ">
-                <div class="item">
-                    <img width="270" height="220" src="https://727512.smushcdn.com/1881418/wp-content/uploads/2017/06/1-1.jpg?lossy=1&strip=1&webp=1" class="attachment-arctica_270x220 size-arctica_270x220 wp-post-image" alt="" />                    <div class="overlay-bg">
-                        <div class="top">
-                            <div class="box">
-                                <div class="content">
-                                    <a data-group="1" href="http://www.d.commonsupport.com/greengia/wp-content/uploads/2017/06/1-1.jpg" class="img-popup"><i class="fa fa-search-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <h4><a href="http://www.d.commonsupport.com/greengia/gallery/modern-garden/">Modern Garden</a></h4>
-                            <p>Garden Care</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-           
-        <article class="col-md-3 col-sm-6 col-xs-12 filter-item snow-removal videos ">
-                <div class="item">
-                    <img width="270" height="220" src="https://727512.smushcdn.com/1881418/wp-content/uploads/2017/06/2-1.jpg?lossy=1&strip=1&webp=1" class="attachment-arctica_270x220 size-arctica_270x220 wp-post-image" alt="" />                    <div class="overlay-bg">
-                        <div class="top">
-                            <div class="box">
-                                <div class="content">
-                                    <a data-group="1" href="http://www.d.commonsupport.com/greengia/wp-content/uploads/2017/06/2-1.jpg" class="img-popup"><i class="fa fa-search-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <h4><a href="http://www.d.commonsupport.com/greengia/gallery/modern-garden-2/">Modern Garden</a></h4>
-                            <p>Snow Removal, Videos</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-           
-        <article class="col-md-3 col-sm-6 col-xs-12 filter-item lawn-care ">
-                <div class="item">
-                    <img width="270" height="220" src="https://727512.smushcdn.com/1881418/wp-content/uploads/2017/06/3-1.jpg?lossy=1&strip=1&webp=1" class="attachment-arctica_270x220 size-arctica_270x220 wp-post-image" alt="" />                    <div class="overlay-bg">
-                        <div class="top">
-                            <div class="box">
-                                <div class="content">
-                                    <a data-group="1" href="http://www.d.commonsupport.com/greengia/wp-content/uploads/2017/06/3-1.jpg" class="img-popup"><i class="fa fa-search-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <h4><a href="http://www.d.commonsupport.com/greengia/gallery/modern-garden-3/">Modern Garden</a></h4>
-                            <p>Lawn Care</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-           
-        <article class="col-md-3 col-sm-6 col-xs-12 filter-item planting videos ">
-                <div class="item">
-                    <img width="270" height="220" src="https://727512.smushcdn.com/1881418/wp-content/uploads/2017/06/4.jpg?lossy=1&strip=1&webp=1" class="attachment-arctica_270x220 size-arctica_270x220 wp-post-image" alt="" />                    <div class="overlay-bg">
-                        <div class="top">
-                            <div class="box">
-                                <div class="content">
-                                    <a data-group="1" href="http://www.d.commonsupport.com/greengia/wp-content/uploads/2017/06/4.jpg" class="img-popup"><i class="fa fa-search-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bottom">
-                            <h4><a href="http://www.d.commonsupport.com/greengia/gallery/modern-garden-4/">Modern Garden</a></h4>
-                            <p>Planting, Videos</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-           
-          </div>
-    </div>
-</section>
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<footer>
-<div class="container">
-<!-- <div class="row">
- --><!-- <div class="col-lg-1"></div> -->
-<div class="AVD-footer-center">
-<div class="row">
-    <div class="col-lg-4 AVD-footer-label"><span class="material-icons AVD-footer-icon">
-phone
-</span> Phone <a href="tel:9309172402" class="footer-link">123-4343-443</a></div>
-    <div class="col-lg-4 AVD-footer-label"><span class="material-icons AVD-footer-icon">
-email
-</span> Email <a href="mailto:xyz@a.com">xyz@a.com</a></div>
-    <div class="col-lg-4 AVD-footer-label"><span class="material-icons AVD-footer-icon">
-near_me
-</span> Address <a href="#">Address</a></div>
-  </div>  
-</div>
-</div>
-<div class="container-fluid">
-<div class="row">
-<div class="col-lg-12 AVD-footer-center-back">
-<div class="container">
-<div class="d-flex justify-content-between">
-  <div class="p-1">
-    <span class="AVD-footer-icon-linkedin"><span class="material-icons">
-    sentiment_very_satisfied
-    </span></span>
-  </div>
-  
-  <div class="p-1">
-    <span class="AVD-footer-copyright">Copyrights © 2020 All Rights Reserved.</span>
-  </div>
-  
-  <div class="p-1"> </div>
-  
-</div>
-</div>
-</div>
-</div>
-</div>
-</footer>
-<span id="to-top" onclick="topFunction()" class="AVD-footer-icon-top p-2 justify-content-end"><span class="material-icons">keyboard_arrow_up</span></span>
-<script type="text/javascript">
-mybutton = document.getElementById("to-top");
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-</script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-<script type='text/javascript' src='http://www.d.commonsupport.com/greengia/wp-content/themes/realgarden/js/isotope.js?ver=5.0.10'></script>
-<script type='text/javascript' src='http://www.d.commonsupport.com/greengia/wp-content/themes/realgarden/js/custom.js?ver=5.0.10'></script>
-
-</body>
-</html>
