@@ -405,7 +405,7 @@
 
     
     </style>
-    <div class="splitview skewed" onClick="style.pointerEvents='none'">
+    <div class="splitview skewed" >
         <div class="panel bottom">
             <div class="content">
                 <div class="description">
@@ -469,13 +469,19 @@
             parent.addEventListener('mousemove', function (event) {
                 // Get the delta between the mouse position and center point.
                 delta = (event.clientX - window.innerWidth / 2) * 0.5;
-
                 // Move the handle.
+                var currentPer = 100*(event.clientX/window.innerWidth);
+                if (currentPer>35 && currentPer<65){
                 handle.style.left = event.clientX + delta + 'px';
 
                 // Adjust the top panel width.
                 topPanel.style.width = event.clientX + skewHack + delta + 'px';
+                // skewHack = 0,
+                // delta = 0;
+            }
             });
+
+
         });
     </script>
     <!-- PUNE KOLKATA -->
