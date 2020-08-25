@@ -507,11 +507,12 @@ margin-left:-12px;
     z-index: -1;
   }
   .AVD-footer-label{
-    text-align: center;
-    justify-content: center;
+    /*text-align: center;*/
+    /*justify-content: center;*/
     margin-bottom: 10px;
     margin-top: 10px;
     font-size: 1.25em;
+    padding-left:50px;
   }
   .AVD-footer-label a,.AVD-footer-label a:active{
   text-decoration: none;
@@ -520,7 +521,6 @@ margin-left:-12px;
 
   .AVD-footer-icon{
     display: inline-flex;
-    vertical-align: middle;
   }
 
    html{
